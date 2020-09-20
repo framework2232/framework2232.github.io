@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="logo.png?raw=true" alt="Framework2232 Logo" title="Framework2232" width="200"/>
+    <img src="banner.png?raw=true" alt="Framework2232 Logo" title="Framework2232" width="500"/>
 </p>
 
 # Framework2232
