@@ -2,11 +2,19 @@
     <img src="banner.png?raw=true" alt="Framework2232 Logo" title="Framework2232" width="500"/>
 </p>
 
-# Framework2232
-
-[__https://framework2232.github.io__](https://framework2232.github.io "Framework2232")
 
 ---
+
+# Framework2232
+
+
+
+[__Twitter__][Twitter]
+| [__Instagram__][Instagram]
+| [__YouTube__][YouTube]
+| [__GitHub__][GitHub]
+| [__Pinterest__][Pinterest]
+
 
 __Author:__ Framework2232
 
@@ -16,12 +24,11 @@ __Date:__ 20SEP20
 
 __Version:__ 1.0.1
 
+__Website:__ [https://framework2232.github.io](https://framework2232.github.io "Framework2232")
+
 ---
 
-[__Python__](https://github.com/framework2232/Python) |
-[__HTML__](https://github.com/framework2232/HTML) |
-[__CSS__](https://github.com/framework2232/CSS) |
-[__Markdown__](https://github.com/framework2232/Markdown)
+
 
 ## PURPOSE
 
@@ -29,10 +36,10 @@ This repository has been constructed to share scripts, procedures and basically 
 
 ## FEATURED
 
-- [x] Python
-- [x] HTML
-- [x] CSS
-- [x] Markdown
+- [x] [__Python__][Python]
+- [x] [__HTML__][HTML]
+- [x] [__CSS__][CSS]
+- [x] [__Markdown__][Markdown]
 
 ## ABOUT
 
@@ -42,12 +49,15 @@ __This repository is shared public in the hope that it will be useful, but WITHO
 
 [See the GNU General Public License for more details.](http://www.gnu.org/licenses/)
 
-## LETS CONNECT
-
-:heavy_check_mark:[Twitter](https://github.com/framework2232/Python "Twitter - Framework2232")
-:heavy_check_mark:[Instagram](https://github.com/framework2232/HTML "Instagram - Framework2232")
-:heavy_check_mark:[YouTube](https://github.com/framework2232/CSS "YouTube - Framework2232")
-:heavy_check_mark:[GitHub](https://github.com/framework2232/Markdown "GitHub - Framework2232")
-:heavy_check_mark:[Pinterest](https://github.com/framework2232/Markdown "Pinterest - Framework2232")
-
 ---
+
+
+[Twitter]: https://github.com/framework2232/Python "Twitter - Framework2232"
+[Instagram]: https://github.com/framework2232/HTML "Instagram - Framework2232"
+[YouTube]: https://github.com/framework2232/CSS "YouTube - Framework2232"
+[GitHub]: https://github.com/framework2232/Markdown "GitHub - Framework2232"
+[Pinterest]: https://github.com/framework2232/Markdown "Pinterest - Framework2232"
+[Python]: https://github.com/framework2232/Python
+[HTML]: https://github.com/framework2232/HTML
+[CSS]: https://github.com/framework2232/CSS
+[Markdown]: https://github.com/framework2232/Markdown
