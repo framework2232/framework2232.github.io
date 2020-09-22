@@ -1,13 +1,9 @@
 <p align="center">
     <img src="banner.png?raw=true" alt="Framework2232 Logo" title="Framework2232" width="500"/>
 </p>
-
+<h1 align=center>Framework2232</h1>
 
 ---
-
-# Framework2232
-
-
 
 [__Twitter__][Twitter]
 | [__Instagram__][Instagram]
@@ -16,15 +12,15 @@
 | [__Pinterest__][Pinterest]
 
 
-__Author:__ Framework2232
+__AUTHOR:__ Framework2232
 
-__Copyright:__ © 2020, Framework2232
+__COPYRIGHT:__ © 2020, Framework2232
 
-__Date:__ 20SEP20
+__DATE:__ 22SEP20
 
-__Version:__ 1.0.1
+__VERSION:__ 1.0.2
 
-__Website:__ [https://framework2232.github.io](https://framework2232.github.io "Framework2232")
+__WEBSITE:__ [__https://framework2232.github.io__](https://framework2232.github.io "Framework2232")
 
 ---
 
