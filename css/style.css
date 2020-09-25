@@ -2,7 +2,6 @@
     font-family: 'Special Elite';
     src: url(../fonts/SpecialElite-Regular.ttf);
 }
-
 /* ------------------GLOBAL------------------ */
 *{
     box-sizing: border-box;
@@ -13,9 +12,6 @@
     text-decoration: none;
     font-family: 'Special Elite', Arial;
 }
-
-
-
 /* ------------------FONT SIZES------------------ */
 h1{
     font-size: 2.2rem;
@@ -23,14 +19,10 @@ h1{
 h2{
     font-size: 1.4rem;
 }
-.social__icons {
-            width: 35px;
-            fill: white;
-        }
-   
-
-
-
+.social__icons{
+    width: 35px;
+    fill: white;
+} 
 /* ------------------MARGINS------------------ */
 h1{
     margin-bottom: 0.5rem;
@@ -44,9 +36,6 @@ h2{
 .indent{
     margin-left: 3ch;
 }
-
-
-
 /* ------------------STYLING CLASSES------------------ */
 .main__container{
     background-color: rgb(20, 20, 20);
@@ -59,9 +48,6 @@ h2{
     display: flex;
     justify-content: space-evenly;
 }
-
-
-
 /* ------------------USER ACTIVE------------------ */
 h2:hover,
 .social__icons:hover{
