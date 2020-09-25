@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="banner.png?raw=true" alt="Framework2232 Logo" title="Framework2232" width="500"/>
+    <img src="images/banner.png?raw=true" alt="Framework2232 Logo" title="Framework2232" width="500"/>
 </p>
 <h1 align=center>Framework2232</h1>
 
