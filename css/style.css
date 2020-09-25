@@ -23,9 +23,11 @@ h1{
 h2{
     font-size: 1.4rem;
 }
-.link__social{
-    font-size: 2rem;
-}
+.social__icons {
+            width: 35px;
+            fill: white;
+        }
+   
 
 
 
@@ -33,7 +35,7 @@ h2{
 h1{
     margin-bottom: 0.5rem;
 }
-.fa{
+.social__icons{
     margin-bottom: 4rem;
 }
 h2{
@@ -62,6 +64,7 @@ h2{
 
 /* ------------------USER ACTIVE------------------ */
 h2:hover,
-.fa:hover{
+.social__icons:hover{
     color: orangered;
+    fill: orangered;
 }
