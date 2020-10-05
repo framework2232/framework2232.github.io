@@ -14,13 +14,13 @@
 
 __AUTHOR:__ Framework2232
 
-__COPYRIGHT:__ © 2020, Framework2232
+__COPYRIGHT:__ Framework2232, © 2020.
 
-__DATE:__ 22SEP20
+__DATE:__ 05OCT20
 
-__VERSION:__ 1.0.2
+__VERSION:__ v1.0.3
 
-__WEBSITE:__ [__https://framework2232.github.io__](https://framework2232.github.io "Framework2232")
+__WEBSITE:__ [__https://framework2232.github.io__][framework2232website]
 
 ---
 
@@ -28,9 +28,18 @@ __WEBSITE:__ [__https://framework2232.github.io__](https://framework2232.github.
 
 ## PURPOSE
 
-This repository has been constructed to share scripts, procedures and basically anything that I found a help to me, which inturn maybe helpful for you. Where possible, the contents are shared with complementing video via YouTube.
+These repositories have been constructed for two reasons: 
+1. To share scripts, procedures and basically anything that I found a help to me, which inturn maybe helpful for you. 
+1. To learn by _doing_, not just watching YouTube and pretending. ;)
+
+Where possible, the contents are shared with complementing video via YouTube.
 
 ## FEATURED
+
+### [QS File Template][QSfiletemplate]
+QS File Template is for anyone building a website from complete scratch based on HTML and CSS. The script reduces time in the basic setup of file structure as the folders and files are ready to go. QT File Template is designed to be run as the first part of the process of writing the website. 
+
+## LANGUAGES
 
 - [x] [__Python__][Python]
 - [x] [__HTML__][HTML]
@@ -39,21 +48,25 @@ This repository has been constructed to share scripts, procedures and basically 
 
 ## ABOUT
 
-I independently work on Framework2232 in my free time. If you like show your support, please follow and promote the usual social media.
+I independently work on Framework2232 in my free time. If you'd like show your support, please follow and promote via the usual social networks.
 
 __This repository is shared public in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.__
 
-[See the GNU General Public License for more details.](http://www.gnu.org/licenses/)
+[See the GNU General Public License for more details.][GNUlicense]
 
 ---
 
+[framework2232website]: https://framework2232.github.io "Framework2232"
+[QSfiletemplate]: https://github.com/framework2232/QSfiletemplate "QS File Template"
+[GNUlicense]: https://github.com/framework2232/framework2232.github.io/blob/master/LICENSE "GNU License"
+
+[Python]: https://github.com/framework2232/Python "Framework2232 Python Repo"
+[HTML]: https://github.com/framework2232/HTML "Framework2232 HTML Repo"
+[CSS]: https://github.com/framework2232/CSS "Framework2232 CSS Repo"
+[Markdown]: https://github.com/framework2232/Markdown "Framework2232 Markdown Repo"
 
 [Twitter]: https://github.com/framework2232/Python "Twitter - Framework2232"
 [Instagram]: https://github.com/framework2232/HTML "Instagram - Framework2232"
 [YouTube]: https://github.com/framework2232/CSS "YouTube - Framework2232"
 [GitHub]: https://github.com/framework2232/Markdown "GitHub - Framework2232"
 [Pinterest]: https://github.com/framework2232/Markdown "Pinterest - Framework2232"
-[Python]: https://github.com/framework2232/Python
-[HTML]: https://github.com/framework2232/HTML
-[CSS]: https://github.com/framework2232/CSS
-[Markdown]: https://github.com/framework2232/Markdown
