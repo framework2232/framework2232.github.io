@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Head Tags and Meta Data</title>
+    <meta name="robots" content="index, follow">
+	<meta name="description" content="Free Meta Data suggestion tool to help build your HTML web page. Copy result and paste direct into your HTML document. Free and easy to use.">
+	<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+	<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://framework2232.github.io/headtags.html">	
+    <link rel="stylesheet" href="headtags/headtags.css">
+    <script defer src="headtags/headtags.js"></script>
+    <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+	<!-- <link rel="icon" type="image/png" href="favicon.png"> -->
+</head>
+
+<body>
+    <header>
+        <h1 class="flex__center">Head Tags and Meta Data</h1>
+        <h2 class="flex__center">A guide for HTML meta data &lt;head&gt; tags.</h2>
+    </header>
+
+    <section class="about__container">
+        <p>This <b>Head Tags and Meta Data </b>site suggests HTML to apply to your document. The &lt;head&gt; tags are essentially a container for meta data which define attributes related to the document. This meta data is not displayed on the web page, rather it provides browsers and search engines specific information about the page for example: document title, description, links and scripts.
+        </p>
+        <br>
+        <p>Fill in the input fields listed below, select Build, and HTML meta data is displayed in the text box ready for you to copy and paste into your HTML document.</p>
+    </section>
+
+    <form id="form" class="form__container" action="/" method="GET">
+
+        <!-- Website Name -->
+        <div class="input__container">
+            <label class="label" for="siteName">Website Name</label>
+            <input id="siteName" class="inputBox" type="text" name="siteName" maxlength="200" placeholder="Website Name">
+        </div>
+
+        <!-- Website URL -->
+        <div class="input__container">
+            <label class="label" for="siteURL">Website URL</label>
+            <input id="siteURL" class="inputBox" type="text" name="siteURL" maxlength="200" placeholder="https://www.yourURL.com">
+        </div>
+
+        <!-- Website Description -->
+        <div class="input__container">
+            <label class="label" for="siteDescription">Website Description</label>
+            <textarea id="siteDescription" class="inputBox" type="text" name="siteDescription" maxlength="160" placeholder="Website Description."></textarea>
+        </div>
+
+        <div class="button__container">
+            <button class="btn__clear" type="reset">Clear All</button>
+            <button class="btn__submit" type="submit">Build</button>
+        </div>
+    </form>
+
+    <!-- This section shows a possible browser search result based on firefox -->
+    <section class="results__container">
+        <div id="resultURL">www.yourURLhere.com</div>
+        <div id="resultName">Website Page Title</div>
+        <div id="resultDescription">Website Page Description goes here. Recommended between 50 - 150 characters long
+        </div>
+    </section>
+
+    <div class="advertisment"></div>
+
+    <!-- This section shows a possible meta data inclusion based on websites listed below -->
+    <section class="meta__container">
+        <div class="meta__container__intro">
+            <p>Suggested content inside these head tags developed information in the following links. For more
+                information, check out:</p>
+            <a href="https://developers.facebook.com/docs/sharing/webmasters">
+                <p>developers.facebook.com/docs/sharing/webmasters</p>
+            </a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/Manifest">
+                <p>developer.mozilla.org/en-US/docs/Web/Manifest</p>
+            </a>
+        </div>
+        <textarea id="metaDataBoilerPlate" class="inputBox" type="text" name="metaDataBoilerPlate"></textarea>
+    </section>
+
+    <!-- Notes about the HTML -->
+    <section class="notes">
+        <h3>Notes about HTML above:</h3>
+        <ul>
+            <li>
+                <p>Delete or comment out what you dont need / have.</p>
+            </li>
+            <li>
+                <p>Make changes as necessary</p>
+            </li>
+            <li>
+                <p>Robots, Googlebot and Bingbot are index + follow.</p>
+            </li>
+            <li>
+                <p>Link included to font-awesome</p>
+            </li>
+        </ul>
+        <br>
+        <h3>Paths defined as follows:</h3>
+        <ul>            
+            <li>
+                <p>stylesheet: css/style.css</p>
+            </li>
+            <li>
+                <p>manifest: manifest.json</p>
+            </li>
+            <li>
+                <p>favicons: favicon.ico</p>
+            </li>
+            <li>
+                <p>favicons: favicon.png</p>
+            </li>
+        </ul>  
+    </section>
+
+    <div class="advertisment"></div>
+    
+    <footer>
+        <a class = "copyright" href="https://framework2232.github.io">Copyright &copy;2020 - Framework2232.</a>
+    </footer>
+</body>
+
+</html>
