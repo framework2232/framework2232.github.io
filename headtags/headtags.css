@@ -1,9 +1,15 @@
+@font-face {
+    font-family: 'Special Elite';
+    src: url(../fonts/SpecialElite-Regular.ttf);
+}
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
+    list-style: none;
+    text-decoration: none;
 }
 body{
     margin: 0 auto;    
@@ -171,18 +177,86 @@ a{
 
 
 
-footer{
+footer {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    width: 100vw;
+    justify-content: space-evenly;
+    color: white;
     margin-top: 2rem;
+}
+.footer__about {
+    max-width: 90%;
+    line-height: 1.5;
+    text-align: justify;
+    padding-top: 1rem;
+    border-top: solid #808080 3px;
+    padding-bottom: 1rem;
+    border-bottom: solid #808080 3px;
+    margin-bottom: 3rem;
+}
+.footer__about h3,
+.footer__about p,
+.footer__about a {
+    color: #808080;
+    font-family: 'Special Elite'
+}
+.footer__about a:hover {
+    color: orangered;
+}
+.footer__site__title {
+    width: 300px;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1rem;
+    font-family: 'Special Elite'
+}
+.footer__link__social {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-top: 1rem;
+}
+.link__social {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 4rem;
+}
+.social__icons {
+    width: 35px;
+    fill: white;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+.social__icons:hover {
+    color: orangered;
+    fill: orangered;
+}
+.footer__nav {
     display: flex;
     justify-content: center;
-    background-color: #141414;
-    width: 100%;
+    width: 300px;
+    margin-top: 1rem;
+    line-height: 2;
 }
-.copyright {
-    text-decoration: none;
+.footer__nav a{
     color: white;
-    font-size: 12px;
-    padding: 1rem;
+    font-family: 'Special Elite'
+}
+.footer__nav a:hover {
+    color: orangered;
+}
+.footer__copyright {
+    text-align: center;
+    width: 100vw;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+.footer__copyright a {
+    color: rgb(80, 80, 80);
+    font-family: 'Special Elite'
 }
 
 /* .advertisment{
