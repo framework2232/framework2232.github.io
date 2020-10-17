@@ -6,9 +6,27 @@
     font-size: 1rem;
 }
 body{
-    margin: 0 auto;
-    background-color: rgb(219, 219, 219);
+    margin: 0 auto;    
     min-height: 100vh;
+}
+.background__image{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;            
+    background-position: center center;
+    background-size: cover;
+    z-index: -2;    
+    background-image: url(../headtags/Metal_Grill_Background_Image.jpg);    
+}
+.background__overlay{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;       
+    background-color: rgb(0, 10, 0);
+    opacity: 0.8;
+    z-index: -1;
 }
 .flex__center{
     display: flex;
@@ -16,6 +34,8 @@ body{
     text-align: center;
 }
 header{
+    background-image: linear-gradient(rgb(0, 0, 0),  rgb(0, 0, 0, 0.3));
+    color: white;
     padding-right: 1rem;
     padding-left: 1rem;
 }
@@ -142,6 +162,7 @@ a{
     max-width: 632px;
     line-height: 1.4rem;
     padding: 1rem;
+    background-color: #fff;
 }
 
 .notes li{
