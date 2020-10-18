@@ -54,7 +54,7 @@
         }
         .link__social {
             display: flex;
-            justify-content: space-evenly;
+            justify-content: center;
             margin-bottom: 4rem;
         }
         .social__icons {
@@ -129,13 +129,18 @@
             margin-right: 1rem;
             width: 450px;
         }
+        .project__description p{
+            margin-bottom: 2rem;
+        }
         .project__button {
             background-color: rgba(0, 0, 0, 0);
             padding: 10px 20px;
-            border: 3px solid white;
+            border: 2px solid white;
             border-radius: 5px;
             font-size: 1.1rem;
-            margin-top: 2rem;
+        }
+        .project__button:hover {
+            background-color:rgba(255, 68, 0, 0.7);            
         }
         .project__image {
             margin: 1rem;
@@ -144,6 +149,7 @@
             width: 450px;
             max-width: 100%;
             height: auto;
+            box-shadow: 2px 2px 5px white;
         }
 
         footer {
@@ -152,11 +158,11 @@
             flex-wrap: wrap;
             padding: 2rem;
             width: 100%;
-            justify-content: space-evenly;
             text-decoration: none;
         }
         .footer__about {
             max-width: 90%;
+            margin-left: 5%;
             line-height: 1.5;
             text-align: justify;
             padding-top: 1rem;
@@ -173,22 +179,25 @@
         .footer__about a:hover {
             color: orangered;
         }
-        .footer__site__title {
-            width: 300px;
+        .footer__section{
+            margin: 0 auto;
+            width: 30%;
+            min-width: 300px;
+        }
+        .footer__site__title { 
             text-align: center;
+            width: 100%;
             font-size: 2rem;
             margin-top: 1rem;
         }
-        .footer__link__social {
+        .footer__link__social {            
             display: flex;
-            justify-content: space-between;
-            width: 300px;
+            justify-content: center;
+            width: 100%;
             margin-top: 1rem;
         }
         .footer__nav {
-            display: flex;
-            justify-content: center;
-            width: 300px;
+            text-align: center;
             margin-top: 1rem;
             line-height: 2;
         }
@@ -309,11 +318,12 @@
                 <h2>Head Tags Meta Data</h2>
             </div>
             <div class="project__description">
-                <p>A FREE online Meta Data suggestion tool to help build your HTML web page. Copy result and paste direct into your HTML document.</p>                
-                <button class="project__button"><a href="https://framework2232.github.io/headtags.html">Go to Site</a></button>
+                <p>A FREE online Meta Data suggestion tool to help build your HTML web page. Copy result and paste direct into your HTML document.</p>    
+                <a class="project__button" href="https://framework2232.github.io/headtags.html">Go to Site</a>              
+
             </div>
             <div class="project__image">
-                <img src="images/QS_File_Template_screenshot.PNG" alt="QS File Template Screenshot">
+                <img src="images/Metadata_Screenshot.jpg" alt="QS File Template Screenshot">
             </div>
         </article>
 
@@ -326,8 +336,7 @@
             <div class="project__description">
                 <p>QS File Template is a helpful python script for anyone building a HTML and CSS based website from complete scratch, by building the basic setup of file and folder structure.
                 </p>
-                <button class="project__button"><a href="https://github.com/framework2232/QSfiletemplate">Go to
-                        Site</a></button>
+                <a class="project__button" href="https://github.com/framework2232/QSfiletemplate">Go to Site</a>
             </div>
             <div class="project__image">
                 <img src="images/QS_File_Template_screenshot.PNG" alt="QS File Template Screenshot">
