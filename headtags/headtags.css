@@ -97,6 +97,7 @@ textarea {
     resize: none;
 }
 button{
+    margin: 0 auto;
     width: 12ch;
     padding: 10px 20px;
     border-radius: 5px;
@@ -110,11 +111,10 @@ button:hover{
     background-color: #777;
 }
 .btn__submit{
-    background-color: green;    
+    background-color: green;
 }
 .button__container{
     display: flex;
-    justify-content: space-evenly;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -155,8 +155,7 @@ button:hover{
 }
 .meta__container__intro{
     line-height: 1.4rem;
-    padding-bottom: 1rem;
-    
+    padding-bottom: 1rem;    
 }
 a{
     text-decoration: none;
@@ -188,12 +187,12 @@ footer {
     flex-wrap: wrap;
     padding: 2rem;
     width: 100%;
-    justify-content: space-evenly;
     color: white;
     margin-top: 2rem;
 }
 .footer__about {
     max-width: 90%;
+    margin-left: 5%;
     line-height: 1.5;
     text-align: justify;
     padding-top: 1rem;
@@ -211,22 +210,27 @@ footer {
 .footer__about a:hover {
     color: orangered;
 }
+.footer__section{
+    margin: 0 auto;
+    width: 30%;
+    min-width: 300px;
+}
 .footer__site__title {
-    width: 300px;
     text-align: center;
+    width: 100%;
     font-size: 2rem;
     margin-top: 1rem;
     font-family: 'Special Elite'
 }
 .footer__link__social {
     display: flex;
-    justify-content: space-between;
-    width: 300px;
+    justify-content: center;
+    width: 100%;
     margin-top: 1rem;
 }
 .link__social {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-bottom: 4rem;
 }
 .social__icons {
@@ -240,9 +244,7 @@ footer {
     fill: orangered;
 }
 .footer__nav {
-    display: flex;
-    justify-content: center;
-    width: 300px;
+    text-align: center;
     margin-top: 1rem;
     line-height: 2;
 }
