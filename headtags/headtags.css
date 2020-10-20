@@ -185,7 +185,7 @@ footer {
     background-color: black;
     display: flex;
     flex-wrap: wrap;
-    padding: 2rem;
+    /* padding: 2rem; */
     width: 100%;
     color: white;
     margin-top: 2rem;
@@ -212,7 +212,7 @@ footer {
 }
 .footer__section{
     margin: 0 auto;
-    width: 30%;
+    /* width: 30%; */
     min-width: 300px;
 }
 .footer__site__title {
