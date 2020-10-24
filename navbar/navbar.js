@@ -1,12 +1,12 @@
 
-//      display the HTML
-//      set the onload default values
-//      display the onload default style
-
-
 // =====================================================================
 //          Navbar - Build HTML with onload default
+//              +   display the HTML
+//              +   set the onload default values
+//              +   display the onload default style
 // =====================================================================
+
+// send to DOM the basic HTML
 let nav = document.getElementById('navbar')
 nav.innerHTML = '<header id="navbar__container"><h1 id="navbar__logo"></h1><nav id="navbar__menu__container"><a id="navbar__menu__item__1" onmouseover="menuItemOneHoverTrue()" onmouseout="menuItemOneHoverFalse()"  href=""></a><a id="navbar__menu__item__2" onmouseover="menuItemTwoHoverTrue()" onmouseout="menuItemTwoHoverFalse()" href=""></a></nav></header>'
 // Define the onload defaults
@@ -55,6 +55,7 @@ function build() {
         document.getElementById("navbar__logo").innerText = siteName.value;
     }
 
+
     // get menu ONE name from input text box
     menuOneName = document.getElementById("menuOneName");
     if (menuOneName.value === "" || menuOneName.value == null) {
@@ -62,11 +63,13 @@ function build() {
     } else {
         document.getElementById("navbar__menu__item__1").innerText = menuOneName.value;
     }
-
-// ==================
-//     document.getElementById('mhColour').value = "#FF0000";
-// ======================
-
+    // get menu one URL from input text box
+    menuOneURL = document.getElementById("menuOneURL");
+    if (menuOneURL.value === "" || menuOneURL.value == null) {
+        document.getElementById("navbar__menu__item__1").setAttribute("href", "#")
+    } else {
+        document.getElementById("navbar__menu__item__1").setAttribute("href", menuOneURL.value);
+    }
 
 
     // get menu TWO name from input text box
@@ -76,8 +79,13 @@ function build() {
     } else {
         document.getElementById("navbar__menu__item__2").innerText = menuTwoName.value;
     }
-
-   
+    // get menu two URL from input text box
+    menuTwoURL = document.getElementById("menuTwoURL");
+    if (menuTwoURL.value === "" || menuTwoURL.value == null) {
+        document.getElementById("navbar__menu__item__2").setAttribute("href", "#")
+    } else {
+        document.getElementById("navbar__menu__item__2").setAttribute("href", menuTwoURL.value);
+    }
 
 
 
@@ -96,14 +104,16 @@ function build() {
     document.getElementById('navbar__menu__item__2').style.color = mtColour.value;
     // menu text HOVER colour
     mhColour = document.getElementById('mhColour');
-
 }
 
 
 
 
-// Navbar Menu Item HOVER
-// uses onmouseover and onmouseout inside the HTML
+
+// ========================================================== 
+//      When the mouse hovers over the Navbar Menu Items
+//  functions use onmouseover and onmouseout inside the HTML
+// ==========================================================
 function menuItemOneHoverTrue() {
     document.getElementById("navbar__menu__item__1").style.color = mhColour.value;
 }
@@ -119,34 +129,25 @@ function menuItemTwoHoverFalse() {
 
 
 
-
+// ========================================================== 
+//    Function to reset all values back to defaut / clear
+// ========================================================== 
 function reset() {
-    // ========================================================== 
-    //                  Reset back to defaut / clear
-    // ========================================================== 
-
     // Clear the Nav Logo Text and reset to default
     document.getElementById("navbar__logo").innerText = "Heading";
     document.getElementById("siteName").value = "";
-
     // Clear the Nav Menu ONE Text and reset to default
     document.getElementById("navbar__menu__item__1").innerText = "Menu 1";
     document.getElementById("menuOneName").value = "";
-
     // Clear the Nav Menu ONE URL and reset to default
     document.getElementById("navbar__menu__item__1").setAttribute("href", "#")
     document.getElementById("menuOneURL").value = "";
-    
-
     // Clear the Nav Menu TWO Text and reset to default
     document.getElementById("navbar__menu__item__2").innerText = "Menu 2";
-    document.getElementById("menuTwoName").value = "";    
-    
+    document.getElementById("menuTwoName").value = "";
     // Clear the Nav Menu ONE URL and reset to default
     document.getElementById("navbar__menu__item__2").setAttribute("href", "#")
     document.getElementById("menuTwoURL").value = "";
-
-   
 
     // Reset background colour back to default
     document.getElementById('bgColour').value = "#000000";
