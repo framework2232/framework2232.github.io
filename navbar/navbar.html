@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="navbar.css">
+</head>
+
+<body>
+    <section>
+        <script defer src="navbar.js"></script>
+        <noscript>Activate JavaScript for NavBar</noscript>
+        <div id="navbar"></div>
+    </section>
+
+    <section id="form" class="form__container">
+        <!-- =============================
+                input TEXT container
+        ================================== -->
+        <!-- Website Name -->
+        <div class="input__container">
+            <label class="inputBoxLabel" for="siteName">Website Name</label>
+            <input id="siteName" class="inputBox" type="text" name="siteName" maxlength="13" placeholder="Website Name - max 12 characters">
+        </div>
+        <!-- Website Menu One -->
+        <div class="input__container">
+            <label class="inputBoxLabel" for="menuOneName">Menu One Name</label>
+            <input id="menuOneName" class="inputBox" type="text" name="menuOneName" maxlength="20" placeholder="Menu One">
+        </div>
+        <!-- Website Menu One -->
+        <div class="input__container">
+            <label class="inputBoxLabel" for="menuOneURL">Menu One URL</label>
+            <input id="menuOneURL" class="inputBox" type="text" name="menuOneURL" maxlength="200" placeholder="Menu One URL" value="#">
+        </div>
+        <!-- Website Menu Two -->
+        <div class="input__container">
+            <label class="inputBoxLabel" for="menuTwoName">Menu Two Name</label>
+            <input id="menuTwoName" class="inputBox" type="text" name="menuTwoName" maxlength="20"
+                placeholder="Menu Two">
+        </div>
+        <!-- Website Menu Two -->
+        <div class="input__container">
+            <label class="inputBoxLabel" for="menuTwoURL">Menu Two URL</label>
+            <input id="menuTwoURL" class="inputBox" type="text" name="menuTwoURL" maxlength="200"
+                placeholder="Menu Two URL" value="#">
+        </div>
+
+
+        <!-- =============================
+                input COLOUR container
+        ================================== -->
+        <!-- Background Colour -->
+        <div class="input__container">
+            <label class="inputBoxLabel" for="bgColour">Background Colour:</label>
+            <input id="bgColour" type="color" name="bgColour" value="#000000">
+        </div>
+        <!-- Logo Text Colour -->
+        <div class="input__container">
+            <label class="inputBoxLabel" for="ltColour">Logo Text Colour:</label>
+            <input id="ltColour" type="color" name="ltColour" value="#FFFFFF">
+        </div>
+        <!-- Menu Text Colour -->
+        <div class="input__container">
+            <label class="inputBoxLabel" for="mtColour">Menu Text Colour:</label>
+            <input id="mtColour" type="color" name="mtColour" value="#FFFFFF">
+        </div>
+        <!-- Menu Hover Colour -->
+        <div class="input__container">
+            <label class="inputBoxLabel" for="mhColour">Menu Hover Colour:</label>
+            <input id="mhColour" type="color" name="mhColour" value="#FF0000">
+        </div>
+
+
+        <!-- ===========================
+                button Container
+        =========================== -->
+        <div class="button__container">
+            <button class="btn__clear" onclick="reset()">Reset</button>
+            <button class="btn__submit" onclick="build()">Build</button>
+        </div>
+    </section>
+
+</body>
+
+</html>
