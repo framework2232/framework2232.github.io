@@ -8,7 +8,7 @@
 
 // send to DOM the basic HTML
 let nav = document.getElementById('navbar')
-nav.innerHTML = '<header id="navbar__container"><h1 id="navbar__logo"></h1><nav id="navbar__menu__container"><a id="navbar__menu__item__1" onmouseover="menuItemOneHoverTrue()" onmouseout="menuItemOneHoverFalse()"  href=""></a><a id="navbar__menu__item__2" onmouseover="menuItemTwoHoverTrue()" onmouseout="menuItemTwoHoverFalse()" href=""></a></nav></header>'
+nav.innerHTML = '<header id="navbar__container"><h3 id="navbar__logo"></h3><nav id="navbar__menu__container"><a id="navbar__menu__item__1" onmouseover="menuItemOneHoverTrue()" onmouseout="menuItemOneHoverFalse()"  href=""></a><a id="navbar__menu__item__2" onmouseover="menuItemTwoHoverTrue()" onmouseout="menuItemTwoHoverFalse()" href=""></a></nav></header>'
 // Define the onload defaults
 document.getElementById("navbar__logo").innerText = "Heading"
 document.getElementById("navbar__menu__item__1").innerText = "Menu 1"

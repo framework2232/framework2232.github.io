@@ -12,6 +12,37 @@ body{
     max-width: 100%;   
     min-height: 100vh; 
 }
+header{
+    background-image: linear-gradient(rgb(0, 0, 0),  rgb(0, 0, 0, 0.3));
+    color: white;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+header h1{    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+header h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.1rem;
+    padding-top: 0rem;
+    padding-bottom: 1rem;
+}
+.about__container{    
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    max-width: 1000px;
+    background-color: #999999;
+    padding: 1rem;
+    line-height: 1.4rem;
+    text-align: justify;
+}
 .background__image{
     position: fixed;
     top: 0;
@@ -27,8 +58,8 @@ body{
     top: 0;
     height: 100%;
     width: 100%;       
-    background-color:#150000;
-    opacity: 0.9;
+    background-color:rgb(11, 36, 36);
+    opacity: 0.95;
     z-index: -1;
 }
 
