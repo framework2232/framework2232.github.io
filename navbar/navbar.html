@@ -9,6 +9,8 @@
 </head>
 
 <body>
+    <div class="background__image"></div>
+    <div class="background__overlay"></div>
     <section>
         <script defer src="navbar.js"></script>
         <noscript>Activate JavaScript for NavBar</noscript>
@@ -22,17 +24,20 @@
         <!-- Website Name -->
         <div class="input__container">
             <label class="inputBoxLabel" for="siteName">Website Name</label>
-            <input id="siteName" class="inputBox" type="text" name="siteName" maxlength="13" placeholder="Website Name - max 12 characters">
+            <input id="siteName" class="inputBox" type="text" name="siteName" maxlength="13"
+                placeholder="Website Name - max 12 characters">
         </div>
         <!-- Website Menu One -->
         <div class="input__container">
             <label class="inputBoxLabel" for="menuOneName">Menu One Name</label>
-            <input id="menuOneName" class="inputBox" type="text" name="menuOneName" maxlength="20" placeholder="Menu One">
+            <input id="menuOneName" class="inputBox" type="text" name="menuOneName" maxlength="20"
+                placeholder="Menu One">
         </div>
         <!-- Website Menu One -->
         <div class="input__container">
             <label class="inputBoxLabel" for="menuOneURL">Menu One URL</label>
-            <input id="menuOneURL" class="inputBox" type="text" name="menuOneURL" maxlength="200" placeholder="Menu One URL">
+            <input id="menuOneURL" class="inputBox" type="text" name="menuOneURL" maxlength="200"
+                placeholder="Menu One URL">
         </div>
         <!-- Website Menu Two -->
         <div class="input__container">
@@ -44,7 +49,7 @@
         <div class="input__container">
             <label class="inputBoxLabel" for="menuTwoURL">Menu Two URL</label>
             <input id="menuTwoURL" class="inputBox" type="text" name="menuTwoURL" maxlength="200"
-                placeholder="Menu Two URL" value="#">
+                placeholder="Menu Two URL">
         </div>
 
 
@@ -80,8 +85,21 @@
             <button class="btn__clear" onclick="reset()">Reset</button>
             <button class="btn__submit" onclick="build()">Build</button>
         </div>
-    </section>
 
+    </section>
+    <!-- This section shows a possible HTML data -->
+    <section class="data__container">
+        <div class="data__container__intro">
+            <p><b>Copy and paste the HTML</b> shown below into your document as required. Generally the Navbar HTML goes under the body tags. This HTML contains inline styling so no links to stylesheets or javascripts etc are necssary.</p>
+        </div>
+        <textarea id="dataTextArea" class="data__text__area" type="text" name="dataTextArea"></textarea>
+    </section>
 </body>
 
 </html>
+
+
+
+
+
+

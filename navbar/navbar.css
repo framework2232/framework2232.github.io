@@ -10,9 +10,27 @@
 body{
     margin: 0 auto; 
     max-width: 100%;   
-    min-height: 100vh;  
+    min-height: 100vh; 
 }
-
+.background__image{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;            
+    background-position: center center;
+    background-size: cover;
+    z-index: -2;    
+    background-image: url(./Metal_Gears_Background_Image.jpg);     
+}
+.background__overlay{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;       
+    background-color:#150000;
+    opacity: 0.9;
+    z-index: -1;
+}
 
 
 /* =====================================================
@@ -71,3 +89,26 @@ button:hover{
     background-color: green;
 }
 
+
+/* =====================================================
+                        dataTextBox
+===================================================== */
+.data__container{
+    margin: 0 auto;
+    margin-top: 2rem;
+    min-height: 10rem;
+    max-width: 632px;
+    background-color: #fff;
+    padding: 1rem;
+}
+.data__container__intro{
+    line-height: 1.4rem;
+    padding-bottom: 1rem;    
+}
+
+#dataTextArea{
+    height: 100%;
+    width: 100%;
+    min-height: 12rem;
+    border: black 3px solid;
+}

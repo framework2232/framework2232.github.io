@@ -64,26 +64,32 @@ function build() {
         document.getElementById("navbar__menu__item__1").innerText = menuOneName.value;
     }
     // get menu one URL from input text box
+    let m1URL = "";
     menuOneURL = document.getElementById("menuOneURL");
     if (menuOneURL.value === "" || menuOneURL.value == null) {
+        m1URL = "#";
         document.getElementById("navbar__menu__item__1").setAttribute("href", "#")
     } else {
+        m1URL = menuOneURL.value;
         document.getElementById("navbar__menu__item__1").setAttribute("href", menuOneURL.value);
     }
 
 
-    // get menu TWO name from input text box
+    // get menu TWO name from input text box   
     menuTwoName = document.getElementById("menuTwoName");
-    if (menuTwoName.value === "" || menuTwoName.value == null) {
+    if (menuTwoName.value === "" || menuTwoName.value == null) {       
         document.getElementById("navbar__menu__item__2").innerText = "Menu 2";
     } else {
         document.getElementById("navbar__menu__item__2").innerText = menuTwoName.value;
     }
     // get menu two URL from input text box
+    let m2URL = "";
     menuTwoURL = document.getElementById("menuTwoURL");
     if (menuTwoURL.value === "" || menuTwoURL.value == null) {
+        m2URL = "#";
         document.getElementById("navbar__menu__item__2").setAttribute("href", "#")
     } else {
+        m2URL = menuTwoURL.value;
         document.getElementById("navbar__menu__item__2").setAttribute("href", menuTwoURL.value);
     }
 
@@ -104,6 +110,19 @@ function build() {
     document.getElementById('navbar__menu__item__2').style.color = mtColour.value;
     // menu text HOVER colour
     mhColour = document.getElementById('mhColour');
+
+
+
+    // textdataarea
+    let sn = document.getElementById("navbar__logo").innerText
+    let m1 = document.getElementById("navbar__menu__item__1").innerText
+    let m2 = document.getElementById("navbar__menu__item__2").innerText
+    showData = document.getElementById('dataTextArea')
+    showData.setAttribute('style', 'white-space: pre;');
+    
+    showData.textContent = '<header style="display: flex; flex-wrap: wrap; width: 100%; background-color: '+bgColour.value+';">\n\t<h1 style="margin: 0.5rem auto; text-align: center; width: 320px; color: '+ltColour.value+'; font-size: 35px;">'+sn+'</h1>\n\t<nav style="display: flex; margin: auto; width: 320px;">\n\t\t<a onMouseOver="this.style.color=&apos;'+mhColour.value+'&apos;" onMouseOut="this.style.color=&apos;'+mtColour.value+'&apos;" href="'+m1URL+'" style="margin: 1rem auto; color: '+mtColour.value+'; font-weight: bold; font-size: 20px; text-decoration: none;">'+m1+'</a>\n\t\t<a onMouseOver="this.style.color=&apos;'+mhColour.value+'&apos;" onMouseOut="this.style.color=&apos;'+mtColour.value+'&apos;" href="'+m2URL+'" style="margin: 1rem auto; color: '+mtColour.value+'; font-weight: bold; font-size: 20px; text-decoration: none;">'+m2+'</a>\n\t</nav>\n</header>\n';
+
+
 }
 
 
@@ -161,4 +180,8 @@ function reset() {
     document.getElementById('navbar__menu__item__2').style.color = "#FFFFFF";
     // Reset menu text HOVER colour back to default
     document.getElementById('mhColour').value = "#FF0000";
+
+    // // Clear dataTextArea
+    // document.getElementById('dataTextArea').innerText = "";
+    document.getElementById('dataTextArea').textContent = '';
 }
