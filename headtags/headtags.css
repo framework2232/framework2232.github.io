@@ -26,8 +26,6 @@ body{
     z-index: -2;    
     background-image: url(../headtags/Metal_Grill_Background_Image.jpg);     
 }
-
-
 .background__overlay{
     position: fixed;
     top: 0;
