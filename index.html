@@ -45,7 +45,6 @@
 
 
         .hero__container {
-            /* background-color: rgb(20, 20, 20); */
             background-color: black;
             min-height: 100vh;
             display: flex;
@@ -59,6 +58,7 @@
         .hero__title {
             font-size: 1.5rem;
             margin-bottom: 0.5rem;
+            
         }
 
         .link__social {
@@ -68,8 +68,8 @@
         }
 
         .social__icons {
-            width: 35px;
-            fill: white;
+            width: 25px;
+            fill: #808080;
             margin-left: 0.5rem;
             margin-right: 0.5rem;
         }
@@ -77,6 +77,9 @@
         .social__icons:hover {
             color: orangered;
             fill: orangered;
+            scale: 180%;
+            transition: ease-in-out;
+            transition-duration: 0.2s;
         }
 
         #hero__projects__title {
@@ -85,65 +88,115 @@
         }
 
         .hero__projects__item {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             margin-left: 3ch;
             margin-bottom: 0.8rem;
         }
 
         .hero__projects__item:hover {
             color: orangered;
-            fill: orangered;
+            scale: 110%;
+            transition: ease-in-out 0.2s;
         }
 
         /* ==================================== */
 
         .project__container {
-            min-height: 100vh;
-            max-width: 1100px;
-            display: flex;
-            flex-wrap: wrap;
+            max-width: 80%;
             margin: auto;
         }
 
         .project__card {
-            width: 320px;
-            height: 550px;
-            background-image: linear-gradient(#808080, black);
-            padding: 1rem;
-            margin: auto;
-            margin-bottom: 3rem;
-        }
-
-        .card__image {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
             width: 100%;
-            height: 220px;
-            border: white solid 3px;
+            max-width: 1100px;
+            min-height: 400px;
+            margin: auto;
+            margin-bottom: 8rem;           
+            padding: 1rem;
+            border-left: 3px orangered solid;
+            border-right: 3px orangered solid;
             border-radius: 10px;
-            margin-bottom: 1rem;
         }
 
-        .card__title {
-            margin-bottom: 1rem;
+        .card__left,
+        .card__right{
+            margin: auto;
+            max-width: 400px;
+            height: 220px;
+            z-index: 1;
+        }
+        
+        .card__right{
+            width: 200px;            
         }
 
-        .card__description {
+       
+        .project__card img {
+            max-height: 400px;
+            width: 100%;
+            max-width: 500px;
+            right: 0;  
+            bottom: 0;        
+            position: absolute;    
+            border-radius: 10px;   
+            z-index: -1;     
+        }
+        .card__overlay{
+            height: 100%;
+            width: 100%;
+            max-width: 500px;
+            right: 0;   
+            bottom: 0;        
+            position: absolute;       
+            background-image: linear-gradient(-90deg, rgba(0, 0, 0, 0),black);
+            
+        }
+
+        .project__card h2 {
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            color: orangered;   
+            font-size: 2rem;
+            background-color: white; 
+            box-shadow: 2px 2px 8px black;  
+            border: solid orangered 2px; 
+            border-radius: 5px;
+
+        }
+
+        .project__card p {
             text-align: justify;
             margin-bottom: 3rem;
+            line-height: 1.5rem;
+            padding: 0.5rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;   
+            color: orangered;        
+            background-color: white;
+            box-shadow: 2px 2px 8px black;
+            border: solid orangered 2px; 
+            border-radius: 5px;
+            font-weight: bold;
         }
 
-        .card__button {
-            background-color: rgba(255, 68, 0, 0.5);
+        .project__card a {
+            background-color:  rgba(255, 68, 0, 0.8);
             padding: 10px 20px;
             border: 2px solid white;
             border-radius: 5px;
-            font-size: 1.1rem;
+            font-size: 1.1rem;            
         }
 
-        .card__button:hover {
-            background-color: orangered;
-            border-color: white;
+        .project__card a:hover {
+            background-color: white;
+            border-color: orangered;
+            color: orangered;
+            font-weight: bold;
+            box-shadow: 2px 2px 8px black;
         }
-
 
 
 
@@ -160,11 +213,11 @@
         .footer__about {
             width: 100%;
             line-height: 1.5;
-            text-align: justify;            
+            text-align: justify;
             border-top: solid #808080 3px;
             border-bottom: solid #808080 3px;
             padding-top: 1rem;
-            padding-bottom: 1rem;            
+            padding-bottom: 1rem;
             margin-bottom: 3rem;
         }
 
@@ -197,12 +250,13 @@
             margin: auto;
             margin-top: 1rem;
         }
-        .footer__link__social li{
+
+        .footer__link__social li {
             margin: auto;
         }
 
         .footer__nav {
-            text-align: center;            
+            text-align: center;
             margin-top: 1rem;
             line-height: 2;
         }
@@ -308,6 +362,11 @@
                         <h2 class="hero__projects__item" title="">Meta Data Builder</h2>
                     </a>
                 </li>
+                <li><a href="#SoundFile">
+                    <h2 class="hero__projects__item" title="">SoundFile
+                    </h2>
+                </a>
+            </li>
                 <li><a href="#QSFileTemplate">
                         <h2 class="hero__projects__item" title="">QS File Template</h2>
                     </a>
@@ -318,28 +377,47 @@
 
 
     <section class="project__container">
-        <div class="project__card" id="HeadTagsMetaData">
-            <img class="card__image" src="images/Metadata_Screenshot.jpg" alt="QS File Template Screenshot">
-            <h2 class="card__title">Head Tags Meta Data</h2>
-            <p class="card__description">A FREE online Meta Data suggestion tool to help build your HTML web page. Copy
-                result and paste direct into your HTML document.</p>
-            <a class="card__button" href="https://framework2232.github.io/headtags.html">Lets Go</a>
-        </div>
-        <!-- <div class="project__card">
-            <img class="card__image" src="images/Metadata_Screenshot.jpg" alt="QS File Template Screenshot">
-            <h2 class="card__title">Head Tags Meta Data</h2>
-            <p class="card__description">A FREE online Meta Data suggestion tool to help build your HTML web page. Copy
-                result and paste direct into your HTML document.</p>
-            <a class="card__button" href="https://framework2232.github.io/headtags.html">Lets Go</a>
-        </div> -->
+
+        <article class="project__card" id="HeadTagsMetaData">
+            <img src="./images/Metadata_Screenshot.jpg" alt="">
+            <div class="card__overlay"></div>
+            <div class="card__left">
+                <h2>Head Tags Meta Data</h2>
+                <p>A FREE online Meta Data suggestion tool to help build your HTML web page. Copy result and paste direct into your HTML document.</p>
+                <a href="#">Lets Go</a>
+            </div>
+            <div class="card__right"></div>
+        </article>
+
+
+        <article class="project__card" id="SoundFile">
+            <img src="./images/SoundFile_BG.png" alt="">
+            <div class="card__overlay"></div>
+            <div class="card__left">
+                <h2>SoundFile</h2>
+                <p>Currently in development stage. Hope to release soon.. Aiming for mid December. A collection of Sounds. :)</p>
+                <a href="#">Lets Go</a>
+            </div>
+            <div class="card__right"></div>
+        </article>
+
+
+
+        <article class="project__card" id="QSFileTemplate">
+            <img src="./images/QS_File_Template_screenshot.PNG" alt="">
+            <div class="card__overlay"></div>
+            <div class="card__left">
+                <h2>QS File Template</h2>
+                <p>QS File Template is a helpful python script for anyone building a HTML and CSS based website from complete scratch, by building the basic setup of file and folder structure.</p>
+                <a href="https://github.com/framework2232/QSfiletemplate">Lets Go</a>
+            </div>
+            <div class="card__right"></div>
+        </article>   
+
+
         
-        <div class="project__card" id="QSFileTemplate">
-            <img class="card__image" src="images/QS_File_Template_screenshot.PNG" alt="QS File Template Screenshot">
-            <h2 class="card__title">QS File Template</h2>
-            <p class="card__description">QS File Template is a helpful python script for anyone building a HTML and CSS
-                based website from complete scratch, by building the basic setup of file and folder structure.</p>
-            <a class="card__button" href="https://github.com/framework2232/QSfiletemplate">Lets Go</a>
-        </div>
+
+           
     </section>
 
 
@@ -434,6 +512,7 @@
             <nav class="footer__nav">
                 <ul>
                     <li><a href="#MDB">Head Tags and Meta Data</a></li>
+                    <li><a href="#soundfile">SoundFile</a></li>
                     <li><a href="#QSFT">QS File Template</a></li>
                 </ul>
             </nav>
