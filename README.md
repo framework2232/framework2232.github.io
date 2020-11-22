@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="images/banner.png?raw=true" alt="Framework2232 Logo" title="Framework2232" width="500"/>
+    <img src="images/Framework2232_Banner_BlackWhite_45deg.png?raw=true" alt="Framework2232 Logo" title="Framework2232" width="500"/>
 </p>
 <h1 align=center>Framework2232</h1>
 
@@ -16,15 +16,13 @@ __AUTHOR:__ Framework2232
 
 __COPYRIGHT:__ Framework2232 © 2020.
 
-__DATE:__ 18OCT20
+__DATE:__ 22NOV20
 
 __VERSION:__ v1.0.4
 
 __WEBSITE:__ [__https://framework2232.github.io__][framework2232website]
 
 ---
-
-
 
 ## PURPOSE
 
@@ -38,8 +36,13 @@ Where possible, the contents are shared with complementing video via YouTube.
 
 ## FEATURED
 
-### [Head Tags and Meta Data][Head Tags and Meta Data]
-QS File Template is for anyone building a website from complete scratch based on HTML and CSS. The script reduces time in the basic setup of file structure as the folders and files are ready to go. QT File Template is designed to be run as the first part of the process of writing the website.
+### [MetaDataMaker][MetaDataMaker]
+A FREE online Metadata suggestion tool to help build your HTML web page. Copy result and paste the markup directly into your HTML head tags.
+
+---
+
+### [SoundFile][SoundFile]
+Currently in development stage. Hope to release soon... Aiming for mid December. A collection of Sounds. :)
 
 ---
 
@@ -66,7 +69,8 @@ __This repository is shared public in the hope that it will be useful, but WITHO
 
 [framework2232website]: https://framework2232.github.io "Framework2232"
 
-[Head Tags and Meta Data]: https://framework2232.github.io/headtags.html "Head Tags and Meta Data"
+[MetaDataMaker]: https://framework2232.github.io "MetaDataMaker"
+[SoundFile]: https://framework2232.github.io "SoundFile"
 [QSfiletemplate]: https://github.com/framework2232/QSfiletemplate "QS File Template"
 [GNUlicense]: https://github.com/framework2232/framework2232.github.io/blob/master/LICENSE "GNU License"
 
