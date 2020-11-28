@@ -58,11 +58,13 @@
             justify-content: center;
             align-items: center;
         }
-  
 
-        .hero__container h1{
-            font-size: 2rem;
+        /* .hero__background__image{} */
+
+        .hero__title {
+            font-size: 1.5rem;
             margin-bottom: 0.5rem;
+            
         }
 
         .link__social {
@@ -73,180 +75,103 @@
 
         .social__icons {
             width: 25px;
+            /* fill: #808080; */
             fill: rgb(80, 80, 80);
             margin-left: 0.5rem;
             margin-right: 0.5rem;
         }
 
-        .social__icons:hover {            
-            fill: rgb(0, 200, 0);
+        .social__icons:hover {
+            color: orangered;
+            fill: orangered;
             scale: 180%;
             transition: ease-in-out;
-            transition-duration: 0.1s;
+            transition-duration: 0.2s;
         }
 
-        
-        
         #hero__projects__title {
-            font-size: 1.1rem;
+            font-size: 1.4rem;
             margin-bottom: 1.5rem;
-            color: white;
         }
 
         .hero__projects__item {
             font-size: 1.2rem;
             margin-left: 3ch;
-            padding: 0.5rem;
+            margin-bottom: 0.8rem;
         }
 
         .hero__projects__item:hover {
-            background-color:  rgb(0, 200, 0);
-            transition: ease-in-out 0.1s;
-            border-radius: 5px;
-            
+            color: orangered;
+            scale: 110%;
+            transition: ease-in-out 0.2s;
         }
 
         /* ==================================== */
 
-        .about__container{
-            background-color: white;
-            padding-top: 3rem;
-            padding-bottom: 3rem;
-            margin-top: 1rem;            
-            margin: auto;
-            
-            
-        }
-        .about__content{
-            display: flex;
-            flex-wrap: wrap-reverse;
-            width: 80%;
-            max-width: 1100px;
-            margin: auto;
-        }
-        .about__image{        
-            height: 250px;            
-            width: 250px;            
-            border-radius: 50%; 
-            margin: auto;
-            padding: 2rem;
-        }
-        .about__text{
-            line-height: 1.5;
-            text-align: justify;
-            border-top: solid black 3px;
-            border-bottom: solid black 3px;
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-            margin-bottom: 3rem;
-            max-width: 500px;
-            margin: auto;
-        }
-        .about__text h3,p{
-            color: black;
-        }
-
-
-
-        /* ==================================== */
         .project__container {
+            max-width: 80%;
             margin: auto;
         }
 
-        /* Project Cards with black background */
-        .project__card__background__black{
-            background-color: black;
-        }
-        .project__card__background__black h2,
-        .project__card__background__black p{
-            color: white;
-        }
-        .project__card__background__black img{
-            /* border: white solid 2px; */
-            /* box-shadow: 2px 2px 2px white; */
-        }
-        .project__card__background__black a{
-            border: 2px solid white;
-            
-        }
-        .project__card__background__black a:hover {
-            background-color: rgba(0, 0, 0, 0);
-            color: white;
-        }        
-        .project__card__background__black .project__card {  
-            flex-wrap: wrap-reverse;
-        }
-
-
-
-        /* Project Cards with white background */
-        .project__card__background__white{
-            background-color: white;
-        }        
-        .project__card__background__white h2,
-        .project__card__background__white p{
-            color: black;
-        }
-        .project__card__background__white a{
-            border: 2px solid black;
-            color: black;
-        }
-        .project__card__background__white a:hover {
-            background-color: rgba(0, 0, 0, 0);
-            color: black;
-        }
-        .project__card__background__white .project__card {
-            flex-direction: row-reverse;
-        }
-
-        .project__card {          
+        .project__card {
+            position: relative;
             display: flex;
-            flex-wrap: wrap-reverse;
+            flex-wrap: wrap;
             width: 100%;
-            max-width: 1000px;
+            max-width: 1100px;
             min-height: 400px;
             margin: auto;
-            padding-top: 2rem;
-            padding-bottom: 2rem;
-        }
-
-
-        .card__left__container{
-            margin: auto;
-            height: 300px;
-            width: 100%;  
-            max-width: 380px;      
-        }
-        .card__right__container{
-            margin: auto;          
-            height: 300px;
-            width: 100%;
-            max-width: 380px;
-        }       
-        
-        .card__left{
+            margin-bottom: 11rem;           
             padding: 1rem;
-            text-align: center;
-        }     
+            border-left: 3px orangered solid;
+            border-right: 3px orangered solid;
+            border-radius: 10px;
+        }
+
+        .card__left,
         .card__right{
-            padding: 1rem;
-        }        
+            margin: auto;
+            max-width: 400px;
+            height: 220px;
+            z-index: 1;
+        }
+        
+        .card__right{
+            width: 200px;            
+        }
+
        
         .project__card img {
+            max-height: 400px;
             width: 100%;
-            height: 300px;
-            border-radius: 5px;          
-            padding: 0.5rem;
-            background-image: linear-gradient(135deg, rgba(0, 0, 0, 0),rgb(0, 200, 0));
-        }        
+            max-width: 500px;
+            right: 0;  
+            bottom: 0;        
+            position: absolute;    
+            border-radius: 10px;   
+            z-index: -1;     
+        }
+        .card__overlay{
+            height: 100%;
+            width: 100%;
+            max-width: 500px;
+            right: 0;   
+            bottom: 0;        
+            position: absolute;       
+            background-image: linear-gradient(-90deg, rgba(0, 0, 0, 0),black);
+            
+        }
 
         .project__card h2 {
+            padding: 0.5rem;
             padding-top: 1rem;
-            padding-bottom: 1rem;           
-            font-size: 2rem;  
-            margin: auto;
-            max-width: 300px; 
-            text-align: center;  
+            padding-bottom: 1rem;
+            color: orangered;   
+            font-size: 2rem;
+            background-color: black; 
+            box-shadow: 10px 10px 10px black; 
+            border-radius: 5px;
+
         }
 
         .project__card p {
@@ -255,21 +180,31 @@
             line-height: 1.5rem;
             padding: 0.5rem;
             padding-top: 0.5rem;
-            padding-bottom: 0.5rem;           
-            font-weight: bold;            
+            padding-bottom: 0.5rem;   
+            color: orangered;        
+            color: white;        
+            background-color: black;
+            box-shadow: 10px 10px 10px black;
+            border-radius: 5px;
+            font-weight: bold;
         }
 
         .project__card a {
-            background-color:   rgb(0, 200, 0);     
+            background-color:  rgba(255, 68, 0, 0.8);
             padding: 10px 20px;
+            border: 2px solid white;
             border-radius: 5px;
-            font-size: 1.1rem;               
-            text-align: center;
-            width: 100%;
-            max-width: 300px;   
-            margin: auto;    
+            font-size: 1.1rem;            
         }
-      
+
+        .project__card a:hover {
+            background-color: white;
+            border-color: orangered;
+            color: orangered;
+            font-weight: bold;
+            box-shadow: 2px 2px 8px black;
+        }
+
 
 
 
@@ -281,7 +216,6 @@
             width: 80%;
             max-width: 1100px;
             margin: auto;
-            margin-top: 12rem;
         }
 
         .footer__about {
@@ -293,7 +227,6 @@
             padding-top: 1rem;
             padding-bottom: 1rem;
             margin-bottom: 3rem;
-
         }
 
         .footer__about h3,
@@ -303,7 +236,7 @@
         }
 
         .footer__about a:hover {
-            color: rgb(0, 200, 0);
+            color: orangered;
         }
 
         .footer__section {
@@ -316,7 +249,6 @@
             width: 100%;
             font-size: 2rem;
             margin-top: 1rem;
-            color: white;
         }
 
         .footer__link__social {
@@ -333,15 +265,11 @@
         .footer__nav {
             text-align: center;
             margin-top: 1rem;
-            line-height: 2;            
+            line-height: 2;
         }
-        .footer__nav a{
-            padding: 0.5rem;
-        }
+
         .footer__nav a:hover {
-            background-color:  rgb(0, 200, 0);
-            transition: ease-in-out 0.1s;
-            border-radius: 5px;
+            color: orangered;
         }
 
         .footer__copyright {
@@ -360,9 +288,10 @@
 
 <body>
     <section class="hero__container">
-       
-        <div><h1>Framework2232</h1></div>
-
+        <div class="hero__background__image"></div>
+        <div class="hero__title">
+            <h1>Framework2232</h1>
+        </div>
         <div>
             <ul class="link__social">
                 <li>
@@ -453,76 +382,48 @@
         </nav>
     </section>
 
-    <section class="about__container">
-        <div class="about__content">
-            <img class="about__image" src="./images/F2232_Logo_45deg_BlackWhite_800x800.png" alt=""></img> 
-            <div class="about__text">
-                <h3>ABOUT</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sint praesentium, magnam dolore nesciunt odit itaque? Voluptatum nostrum officiis, maiores voluptates dignissimos ad odit rem blanditiis eligendi neque laudantium iusto.
-                </p>
-            </div>
-        </div>
-       
-    </section>
-
-
 
     <section class="project__container">
 
-        <article class="project__card__background__black" id="MetaDataMaker">
-        <div class="project__card" >
-            <div class="card__left__container">
-                <div class="card__left">
-                    <h2>MetaData Maker</h2>
-                    <p>A FREE online Metadata suggestion tool to help build your HTML web page. Copy result and paste the markup directly into your HTML head tags.</p>
-                    <a href="#">Lets Go</a>
-                </div>
+        <article class="project__card" id="MetaDataMaker">
+            <img src="./images/Metadata_Screenshot.jpg" alt="" loading="lazy">
+            <div class="card__overlay"></div>
+            <div class="card__left">
+                <h2>MetaData Maker</h2>
+                <p>A FREE online Metadata suggestion tool to help build your HTML web page. Copy result and paste the markup directly into your HTML head tags.</p>
+                <a href="#">Lets Go</a>
             </div>
-            <div class="card__right__container">
-                <div class="card__right">
-                    <img src="./images/Metadata_Screenshot.jpg" alt="">
-                </div>
-            </div>
-            </div>
+            <div class="card__right"></div>
         </article>
 
 
-        <article class="project__card__background__white" id="SoundFile">
-            <div class="project__card" >
-                <div class="card__left__container">
-                    <div class="card__left">
-                        <h2>SoundFile</h2>
-                        <p>Currently in development stage. Hope to release soon... Aiming for mid December. A collection of Sounds. :)</p>
-                        <a href="#">Lets Go</a>
-                    </div>
-                </div>
-                <div class="card__right__container">
-                    <div class="card__right">
-                        <img src="./images/SoundFile_BG.png" alt="">
-                    </div>
-                </div>
+        <article class="project__card" id="SoundFile">
+            <img src="./images/SoundFile_BG.png" alt="" loading="lazy">
+            <div class="card__overlay"></div>
+            <div class="card__left">
+                <h2>SoundFile</h2>
+                <p>Currently in development stage. Hope to release soon... Aiming for mid December. A collection of Sounds. :)</p>
+                <a href="#">Lets Go</a>
             </div>
+            <div class="card__right"></div>
         </article>
 
 
 
-
-        <article class="project__card__background__black" id="QSFileTemplate">
-            <div class="project__card" >
-                <div class="card__left__container">
-                    <div class="card__left">
-                        <h2>QS File Template</h2>
-                        <p>QS File Template is a helpful python script for anyone building a HTML and CSS based website from complete scratch, by building the basic setup of file and folder structure.</p>
-                        <a href="https://github.com/framework2232/QSfiletemplate">Lets Go</a>
-                    </div>
-                </div>
-                <div class="card__right__container">
-                    <div class="card__right">
-                        <img src="./images/QS_File_Template_screenshot.PNG" alt="">
-                    </div>
-                </div>
+        <article class="project__card" id="QSFileTemplate">
+            <img src="./images/QS_File_Template_screenshot.PNG" alt="" loading="lazy">
+            <div class="card__overlay"></div>
+            <div class="card__left">
+                <h2>QS File Template</h2>
+                <p>QS File Template is a helpful python script for anyone building a HTML and CSS based website from complete scratch, by building the basic setup of file and folder structure.</p>
+                <a href="https://github.com/framework2232/QSfiletemplate">Lets Go</a>
             </div>
-        </article> 
+            <div class="card__right"></div>
+        </article>   
+
+
+        
+
            
     </section>
 
@@ -533,7 +434,7 @@
 
     <footer>
         <div class="footer__about">
-            <!-- <h3>ABOUT</h3> -->
+            <h3>ABOUT</h3>
             <p>I independently work on Framework2232 in my free time. If you'd like show your support, please follow
                 and promote the usual social media. This repository is shared public in the hope that it will be
                 useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
