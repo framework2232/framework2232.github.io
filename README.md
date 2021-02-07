@@ -14,9 +14,9 @@
 
 __AUTHOR:__ Framework2232
 
-__COPYRIGHT:__ Framework2232 © 2020.
+__COPYRIGHT:__ Framework2232 © 2021.
 
-__DATE:__ 22NOV20
+__DATE:__ 07FEB21
 
 __VERSION:__ v1.0.4
 
@@ -67,7 +67,7 @@ __This repository is shared public in the hope that it will be useful, but WITHO
 [framework2232website]: https://framework2232.github.io "Framework2232"
 
 [MetaDataMaker]: https://framework2232.github.io "MetaDataMaker"
-[FridayGambit]:
+[FridayGambit]: https://framework2232.github.io "FridayGambit"
 [GNUlicense]: https://github.com/framework2232/framework2232.github.io/blob/master/LICENSE "GNU License"
 
 
