@@ -41,13 +41,8 @@ A FREE online Metadata suggestion tool to help build your HTML web page. Copy re
 
 ---
 
-### [SoundFile][SoundFile]
-Currently in development stage. Hope to release soon... Aiming for mid December. A collection of Sounds. :)
-
----
-
-### [QS File Template][QSfiletemplate]
-QS File Template is for anyone building a website from complete scratch based on HTML and CSS. This python script reduces time in the basic setup of file structure as the folders and files are ready to go. QT File Template is designed to be run as the first part of the process of writing the website. 
+### [FridayGambit][FridayGambit]
+Currently in development stage. Hope to release soon... Aiming for mid March. A Chess Website. :)
 
 ## LANGUAGES
 
@@ -58,6 +53,8 @@ QS File Template is for anyone building a website from complete scratch based on
 - [x] __Markdown__
 
 ## ABOUT
+
+Content from a self taught hobby perspective. I'm sharing coding, scripts, procedures and basically anything that I found a help to me, which in turn maybe helpful for you. I don't pretend to be an expert on coding. In fact most of what Ive learnt has come from watching other YouTube channels I subscribe to. What I can share is the coding / scripting etc which I wrote to get results shown.
 
 I independently work on Framework2232 in my free time. If you'd like show your support, please follow and promote via the usual social networks.
 
@@ -70,8 +67,7 @@ __This repository is shared public in the hope that it will be useful, but WITHO
 [framework2232website]: https://framework2232.github.io "Framework2232"
 
 [MetaDataMaker]: https://framework2232.github.io "MetaDataMaker"
-[SoundFile]: https://framework2232.github.io "SoundFile"
-[QSfiletemplate]: https://github.com/framework2232/QSfiletemplate "QS File Template"
+[FridayGambit]:
 [GNUlicense]: https://github.com/framework2232/framework2232.github.io/blob/master/LICENSE "GNU License"
 
 
