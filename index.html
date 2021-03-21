@@ -14,7 +14,7 @@
     <title>Framework2232</title>
     <meta name="robots" content="index, follow">
     <meta name="description"
-        content="A collection of website builders and scripts to aid in design and development of online websites. Good for static and dynamic websites.">
+        content="A showcase of website built by Framework2232 and common resources for future projects.">
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <link rel="canonical" href="https://framework2232.github.io">
@@ -29,335 +29,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <style>
-        body {
-            background-color: black;
-        }
-
-        @font-face {
-            font-family: 'Special Elite';
-            src: url(fonts/SpecialElite-Regular.ttf);
-            font-display: fallback;
-        }
-
-        * {
-            box-sizing: border-box;
-            padding: 0;
-            margin: 0;
-            color: white;
-            list-style: none;
-            text-decoration: none;
-            font-family: 'Special Elite', Arial;
-            scroll-behavior: smooth;
-        }
-
-        .hero__container {
-            background-color: black;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .hero__container h1 {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .link__social {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 4rem;
-        }
-
-        .social__icons {
-            width: 25px;
-            fill: rgb(80, 80, 80);
-            margin-left: 0.5rem;
-            margin-right: 0.5rem;
-        }
-
-        .social__icons:hover {
-            fill: rgb(0, 200, 0);
-            scale: 180%;
-            transition: ease-in-out;
-            transition-duration: 0.1s;
-        }
-
-        #hero__projects__title {
-            font-size: 1.1rem;
-            margin-bottom: 1.5rem;
-            color: white;
-        }
-
-        .hero__projects__item {
-            font-size: 1.2rem;
-            margin-left: 3ch;
-            padding: 0.5rem;
-        }
-
-        .hero__projects__item:hover {
-            background-color: rgb(0, 200, 0);
-            transition: ease-in-out 0.1s;
-            border-radius: 5px;
-        }
-
-        /* ==================================== */
-
-        .about__container {
-            background-color: white;
-            padding-top: 3rem;
-            padding-bottom: 3rem;
-            margin-top: 1rem;
-            margin: auto;
-        }
-
-        .about__content {
-            display: flex;
-            flex-wrap: wrap-reverse;
-            width: 80%;
-            max-width: 1100px;
-            margin: auto;
-        }
-
-        .about__image {
-            height: 250px;
-            width: 250px;
-            border-radius: 50%;
-            margin: auto;
-            padding: 2rem;
-        }
-
-        .about__text {
-            line-height: 1.5;
-            text-align: justify;
-            border-top: solid black 3px;
-            border-bottom: solid black 3px;
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-            margin-bottom: 3rem;
-            max-width: 500px;
-            margin: auto;
-        }
-
-        .about__text h3,
-        p {
-            color: black;
-        }
-
-
-
-        /* ==================================== */
-        .project__container {
-            margin: auto;
-        }
-
-        /* Project Cards with black background */
-        .project__card__background__black {
-            background-color: black;
-        }
-
-        .project__card__background__black h2,
-        .project__card__background__black p {
-            color: white;
-        }
-
-        .project__card__background__black a {
-            border: 2px solid white;
-            background-color: rgb(0, 200, 0);
-        }
-
-        .project__card__background__black a:hover {
-            background-color: rgba(0, 0, 0, 0);
-            color: white;
-        }
-
-        .project__card__background__black .project__card {
-            flex-wrap: wrap-reverse;
-        }
-
-
-
-        /* Project Cards with white background */
-        .project__card__background__white {
-            background-color: white;
-        }
-
-        .project__card__background__white h2,
-        .project__card__background__white p {
-            color: black;
-        }
-
-        .project__card__background__white a {
-            border: 2px solid rgb(0, 200, 0);
-            color: rgb(0, 200, 0);
-            background-color: rgba(0, 0, 0, 0);
-        }
-
-        .project__card__background__white a:hover {
-            background-color: rgb(0, 200, 0);
-            color: white;
-        }
-
-        .project__card__background__white .project__card {
-            flex-direction: row-reverse;
-        }
-
-
-
-
-        .project__card {
-            display: flex;
-            flex-wrap: wrap-reverse;
-            width: 100%;
-            max-width: 1000px;
-            min-height: 400px;
-            margin: auto;
-            padding-top: 2rem;
-            padding-bottom: 4rem;
-        }
-
-        .card__left__container,
-        .card__right__container {
-            margin: auto;
-            height: 300px;
-            width: 100%;
-            max-width: 450px;
-        }
-
-        .card__left {
-            padding: 1rem;
-            text-align: center;
-        }
-
-        .card__right {
-            padding: 1rem;
-        }
-
-        .project__card img {
-            width: 100%;
-            height: 300px;
-            border-radius: 5px;
-            padding: 0.3rem;
-            background-image: linear-gradient(135deg, rgba(0, 0, 0, 0), rgb(0, 200, 0), rgba(0, 0, 0, 0), rgb(0, 200, 0));
-        }
-
-        .project__card h2 {
-            padding-top: 2rem;
-            padding-bottom: 1rem;
-            font-size: 2rem;
-            margin: auto;
-            max-width: 300px;
-            text-align: center;
-        }
-
-        .project__card p {
-            text-align: justify;
-            margin-bottom: 3rem;
-            line-height: 1.5rem;
-            padding: 0.5rem;
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-            font-weight: bold;
-        }
-
-        .project__card a {
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-size: 1.1rem;
-            text-align: center;
-            width: 100%;
-            max-width: 300px;
-            margin: auto;
-        }
-
-
-
-
-        footer {
-            background-color: black;
-            display: flex;
-            flex-wrap: wrap;
-            text-decoration: none;
-            width: 80%;
-            max-width: 1100px;
-            margin: auto;
-            margin-top: 12rem;
-        }
-
-        .footer__about {
-            width: 100%;
-            line-height: 1.5;
-            text-align: justify;
-            border-top: solid #808080 3px;
-            border-bottom: solid #808080 3px;
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-            margin-bottom: 3rem;
-
-        }
-
-        .footer__about h3,
-        .footer__about p,
-        .footer__about a {
-            color: #808080;
-        }
-
-        .footer__about a:hover {
-            color: rgb(0, 200, 0);
-        }
-
-        .footer__section {
-            margin: auto;
-            width: 260px;
-        }
-
-        .footer__site__title {
-            text-align: center;
-            width: 100%;
-            font-size: 2rem;
-            margin-top: 1rem;
-            color: white;
-        }
-
-        .footer__link__social {
-            display: flex;
-            width: 100%;
-            margin: auto;
-            margin-top: 1rem;
-        }
-
-        .footer__link__social li {
-            margin: auto;
-        }
-
-        .footer__nav {
-            text-align: center;
-            margin-top: 1rem;
-            line-height: 2;
-        }
-
-        .footer__nav a {
-            padding: 0.5rem;
-        }
-
-        .footer__nav a:hover {
-            background-color: rgb(0, 200, 0);
-            transition: ease-in-out 0.1s;
-            border-radius: 5px;
-        }
-
-        .footer__copyright {
-            text-align: center;
-            width: 100%;
-            margin: auto;
-            margin-top: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .footer__copyright a {
-            color: rgb(80, 80, 80);
-        }
+        body{margin:auto}@font-face{font-family:'Special Elite';src:url(fonts/SpecialElite-Regular.ttf);font-display:fallback}*{box-sizing:border-box;padding:0;margin:0;color:#fff;list-style:none;text-decoration:none;font-family:'Special Elite',Arial;scroll-behavior:smooth}.hero__container{background-color:#000;min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center}.hero__container h1{font-size:2rem;margin-bottom:.5rem}.link__social{display:flex;justify-content:center;margin-bottom:4rem}.social__icons{width:25px;fill:#505050;margin-left:.5rem;margin-right:.5rem}.social__icons:hover{fill:#00c800;scale:180%;transition:ease-in-out;transition-duration:.1s}#hero__projects__title{font-size:1.1rem;margin-bottom:1.5rem;color:#fff}.hero__projects__item{font-size:1.2rem;margin-left:3ch;padding:.5rem}.hero__projects__item:hover{background-color:#00c800;transition:ease-in-out .1s;border-radius:5px}.about__container{background-color:#fff;padding-top:3rem;padding-bottom:3rem;margin-top:1rem;margin:auto}.about__content{display:flex;flex-wrap:wrap-reverse;width:80%;max-width:1100px;margin:auto}.about__image{height:250px;width:250px;border-radius:50%;margin:auto;padding:2rem}.about__text{line-height:1.5;text-align:justify;border-top:solid #000 3px;border-bottom:solid #000 3px;padding-top:1rem;padding-bottom:1rem;margin-bottom:3rem;max-width:500px;margin:auto}.about__text h3,p{color:#000}.project__container{margin:auto;max-width:800px;display:flex;flex-wrap:wrap}.project__container article{margin:1rem;background-color:#000}.project__container a{display:flex;padding:1rem;box-shadow:5px 5px 20px #000}@media screen and (max-width:700px){.project__container a{flex-direction:column}.project__container h2{margin-top:1rem}}@media screen and (max-width:400px){.project__container a{padding:1rem 0}}.project__container article div{margin:auto}.project__container h2{color:#fff;width:100%;text-align:center;margin-bottom:1rem}.project__container img{padding:1rem;margin:auto;width:300px;height:300px;background-position:center;background-size:cover}.project__container p{color:#fff;padding:0 1rem;text-align:justify}.resources__container{margin:auto;margin-top:8rem;max-width:800px;padding:1rem}.resources__container article{box-shadow:0 0 20px #000;padding:1rem;margin-bottom:4rem}.resources__container h2,.resources__container h3,.resources__container p,.resources__container textarea{color:#000}.resources__container h2{font-size:3rem;margin-bottom:1rem}.resources__container h3{margin-bottom:.8rem}.resources__container p{text-align:justify;line-height:1.5rem;margin-bottom:1rem}.resources__container a{color:#00f}.resources__container textarea{font-family:Arial,Helvetica,sans-serif;width:100%;height:20rem;border:green solid 3px}.resources__container button{width:100%;background-color:green;padding:1rem;font-size:1.2rem;font-weight:700;border:none}footer{background-color:#000;display:flex;flex-wrap:wrap;text-decoration:none;width:100%;margin:auto;margin-top:12rem}.footer__about{max-width:1100px;line-height:1.5;text-align:justify;border-top:solid grey 3px;border-bottom:solid grey 3px;padding:1rem;margin:auto;margin-bottom:3rem}.footer__about a,.footer__about h3,.footer__about p{color:grey}.footer__about a:hover{color:#00c800}.footer__section{margin:auto;width:260px}.footer__site__title{text-align:center;width:100%;font-size:2rem;margin-top:1rem;color:#fff}.footer__link__social{display:flex;width:100%;margin:auto;margin-top:1rem}.footer__link__social li{margin:auto}.footer__nav{text-align:center;margin-top:1rem;line-height:2}.footer__nav a{padding:.5rem}.footer__nav a:hover{background-color:#00c800;transition:ease-in-out .1s;border-radius:5px}.footer__copyright{text-align:center;width:100%;margin:auto;margin-top:3rem;margin-bottom:1rem}.footer__copyright a{color:#505050}
     </style>
 </head>
 
@@ -450,7 +122,7 @@
                         </h2>
                     </a>
                 </li>
-                
+
             </ul>
         </nav>
     </section>
@@ -460,7 +132,9 @@
             <img class="about__image" src="./images/F2232_Logo_45deg_BlackWhite_800x800.png" alt=""></img>
             <div class="about__text">
                 <h3>ABOUT</h3>
-                <p>I established Framework2232 as a way to develop an independent online prescence. Websites built by Framework2232 are from scratch using HTML, CSS and JavaScript. Some Markup and Python script is shared in Repositaries.
+                <p>I established Framework2232 as a way to develop an independent online prescence. Websites built by
+                    Framework2232 are from scratch using HTML, CSS and JavaScript. Some Markup and Python script is
+                    shared in Repositaries.
                 </p>
             </div>
         </div>
@@ -470,54 +144,107 @@
 
 
     <section class="project__container">
-
-        <article class="project__card__background__black" id="htmlheadtags">
-            <div class="project__card">
-                <div class="card__left__container">
-                    <div class="card__left">
-                        <h2>HTML HeadTags</h2>
-                        <p>HTMLHeadTags.com is a FREE ONLINE metadata utility which suggests HTML to apply to your webpage, acting as an aid to prompt common metadata found inside website head tags.</p>
-                        <a href="https://www.htmlheadtags.com" target="_blank">Lets Go</a>
-                    </div>
+        <article id="htmlheadtags">
+            <a href="#" target="_blank">
+                <img src="./images/Screenshot_HTMHeadTags.png" alt="Screenshot of HTMLHeadTags.com interface">
+                <div>
+                    <h2>HTML HeadTags</h2>
+                    <p>HTMLHeadTags.com is a FREE ONLINE metadata utility which suggests HTML to apply to your webpage,
+                        acting as an aid to prompt common metadata found inside website head tags.</p>
                 </div>
-                <div class="card__right__container">
-                    <div class="card__right">
-                        <img src="./images/Screenshot_HTMHeadTags.png" alt="Screenshot of HTMLHeadTags.com interface">
-                    </div>
-                </div>
-            </div>
+            </a>
         </article>
 
-
-        <article class="project__card__background__white" id="FridayGambit">
-            <div class="project__card">
-                <div class="card__left__container">
-                    <div class="card__left">
-                        <h2>FridayGambit</h2>
-                        <p>Chess themed site CURRENTLY IN DEVELOPMENT being built from stratch using HTML, CSS and JavaScript.</p>
-                        <a href="#" target="_blank">Lets Go</a>
-                    </div>
+        <article id="FridayGambit">
+            <a href="#" target="_blank">
+                <img src="./images/ChessBoardBackground.jpg" alt="Chess Board with Chess Pieces">
+                <div>
+                    <h2>FridayGambit</h2>
+                    <p>Chess themed site CURRENTLY IN DEVELOPMENT being built from stratch using HTML, CSS and
+                        JavaScript.</p>
                 </div>
-                <div class="card__right__container">
-                    <div class="card__right">
-                        <img src="./images/ChessBoardBackground.jpg" alt="Chess Board with Chess Pieces">
-                    </div>
-                </div>
-            </div>
+            </a>
         </article>
-    
     </section>
 
 
+    <section class="resources__container">
+        <h2>RESOURCES</h2>
+        <article>
+            <h3>Embed Youtube Video</h3>
+            <p>Want to embed a YouTube Video into a website? Try this HTML and CSS to embed a responsive YouTube video
+                into the HTML document. Checkout: <a href="https://youtu.be/9YffrCViTVk">tipswithpunch</a> for a how to
+                follow along.</p>
+            <textarea id="embedYoutube" type="text" name="embedYoutube"></textarea>
+            <script>
+                var showData;
+                showData = document.getElementById('embedYoutube');
+                showData.textContent = `                
+            <div class="iframe-container">
+                    <iframe ... VIDEO URL ...>
+                    </iframe>
+            </div>
+    
+
+
+            .iframe-container {
+                    position: relative;
+                    width: 100%;
+                    padding-bottom: 56.25%; 
+                    height: 0;
+            }
+
+            .iframe-container iframe {
+                    position: absolute;
+                    top:0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+            }
+            `;
+            </script>
+            <button id="copyToClipboard">Copy To Clipboard</button>
+        </article>
+
+        <article>
+            <h3>&lt;script&gt; Textarea Value</h3>
+            <p>Want to use a textbox / textarea in the HTML document and need to include a value? An example of textbox
+                with value using Javascript. The Javascript value is wrapped using backticks. (next to the 1 key)</p>
+            <textarea id="TextareaValue" type="text" name="TextareaValue"></textarea>
+            <script>
+                var showData
+                showData = document.getElementById('TextareaValue')
+                showData.textContent = `
+            <textarea id="Area" type="text" name="Area"></textarea>
+
+
+            < script >
+                    var showData;
+                    showData = document.getElementById('Area');
+                    showData.textContent = ${"`"}
+
+                    ... VALUE HERE ...
+
+                    ${"`"}
+            ${"< /script >"}
+            `;
+            </script>
+            <button id="copyToClipboard">Copy To Clipboard</button>
+        </article>
+    </section>
 
 
 
 
     <footer>
         <div class="footer__about">
-            <p>I independently work on Framework2232 in my free time. If you'd like show your support, please follow and promote the usual social media. This repository is shared public in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+            <p>I independently work on Framework2232 in my free time. If you'd like show your support, please follow and
+                promote the usual social media. This repository is shared public in the hope that it will be useful, but
+                WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+                PURPOSE.
             </p>
-            <a href="https://github.com/framework2232/framework2232.github.io/blob/master/LICENSE" target="_blank">See the GNU General Public License for more details.</a>
+            <a href="https://github.com/framework2232/framework2232.github.io/blob/master/LICENSE" target="_blank">See
+                the GNU General Public License for more details.</a>
 
         </div>
         <div class="footer__section">
@@ -596,7 +323,7 @@
             <nav class="footer__nav">
                 <ul>
                     <li><a href="#htmlheadtags">HTML HeadTags</a></li>
-                    <li><a href="#FridayGambit">FridayGambit</a></li>                   
+                    <li><a href="#FridayGambit">FridayGambit</a></li>
                 </ul>
             </nav>
         </div>
