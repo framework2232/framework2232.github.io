@@ -1,0 +1,401 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth
+}
+
+
+/* =============================================== */
+/*            Fixed Background Container           */
+/* =============================================== */
+.fixed__background {
+    position: relative;
+}
+
+.fixed__background .box__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    min-height: 100vh;
+    z-index: -10;
+    background-color: black;
+}
+
+.fixed__background .box {
+    margin: auto;
+    width: 7vw;
+    min-width: 50px;
+    height: 7vw;
+    min-height: 50px;
+    border-radius: 50%;
+}
+
+.fixed__background .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -5;
+}
+
+
+
+
+
+/* =============================================== */
+/*                Hero Container                   */
+/* =============================================== */
+.hero__container {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    min-height: 120vh;
+}
+
+.hero__container .welcome__message {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 40px;
+    background-color: orangered;
+    box-shadow: 15px 15px 20px black;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: white 3px solid;
+    z-index: 10;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.hero__container .welcome__message h1 {
+    font-size: 60px;
+    color: white;
+}
+
+.hero__container .welcome__message p {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .hero__container .welcome__message h1 {
+        font-size: 40px;
+    }
+
+    .hero__container .welcome__message p {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .hero__container .welcome__message {
+        padding: 5px 10px;
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .hero__container .welcome__message h1 {
+        font-size: 30px;
+    }
+
+    .hero__container .welcome__message p {
+        font-size: 20px;
+    }
+}
+
+.hero__container .arrow__down svg {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: orangered;
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+    stroke: white;
+    z-index: 10;
+    box-shadow: 15px 15px 20px black;
+}
+
+
+
+
+/* ========================================== */
+/*           About Container                  */
+/* ========================================== */
+.about__container {
+    background-color: orangered;
+    margin: auto;
+    font-family: 'Shadows Into Light', cursive;
+    border-top: white 5px solid;
+    border-bottom: white 5px solid;
+}
+
+.about__content {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    width: 80%;
+    max-width: 1100px;
+    margin: auto
+}
+
+.about__container .about__image {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin: auto;
+    padding: 2rem;
+}
+
+.about__container .about__text {
+    line-height: 1.5;
+    text-align: justify;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+    max-width: 500px;
+    margin: auto
+}
+
+.about__container .about__text h3 {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.about__container .about__text p {
+    color: white;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+
+
+/* ================================================ */
+/*         Project / Protfolio Container            */
+/* ================================================ */
+.article__container {
+    margin: auto;
+    margin-top: 200px;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.article__container article {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+    padding-right: 0;
+    background-color: orangered;
+    box-shadow: 15px 15px 20px black;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: white 3px solid;
+    font-family: 'Shadows Into Light', cursive;
+    min-height: 310px;
+}
+
+.article__content {
+    display: flex;
+   
+}
+
+.article__container .article__link {
+    display: flex;
+    margin: auto;
+    color: red;
+}
+
+.article__container .article__link a,
+.article__container .article__link p {
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.article__container .article__link a:hover {
+    color: #000;
+}
+
+@media screen and (max-width:700px) {
+    .article__container article{
+        padding-right: 1rem;
+    }
+    .article__container .article__content {
+        flex-direction: column
+    }
+
+
+    .article__container h2 {
+        margin-top: 1rem
+    }
+}
+
+@media screen and (max-width:400px) {
+    .article__container article {
+        padding: 1rem 0
+    }
+}
+
+.article__container .article__content {
+    margin: auto
+}
+
+.article__container h2 {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.article__container img {
+    margin: auto;
+    max-width: 280px;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 5px 5px 8px #000;
+}
+
+@media screen and (max-width:340px) {
+    .article__container img {
+        width: 220px;
+    }
+}
+
+.article__container p {
+    color: #fff;
+    padding: 0 1rem;
+    text-align: justify;
+    font-size: 1.2rem;
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 2px;
+}
+
+
+
+
+/* =============================================== */
+/*               Twitter Container                 */
+/* =============================================== */
+.twitter__container {
+    margin: auto;
+    margin: 1rem;
+    margin-top: 200px;
+    text-align: center;
+}
+
+
+
+/* =============================================== */
+/*            Footer Container                     */
+/* =============================================== */
+footer {
+    background-color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    width: 100%;
+    margin: auto;
+    margin-top: 12rem;
+    padding-top: 2rem;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.footer__about {
+    max-width: 1100px;
+    line-height: 1.5;
+    text-align: justify;
+    border-top: solid orangered 3px;
+    border-bottom: solid orangered 3px;
+    padding: 1rem;
+    margin: auto;
+    margin-bottom: 1rem
+}
+
+.footer__about p {
+    color: orangered
+}
+
+.footer__section {
+    margin: auto;
+    width: 260px
+}
+
+footer .footer__site__title {
+    text-align: center;
+    width: 100%;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #fff
+}
+
+footer .footer__link__social {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer__link__social li {
+    margin: auto
+}
+
+footer svg {
+    fill: white;
+    height: 40px;
+}
+
+footer svg:hover {
+    fill: orangered;
+}
+
+.footer__nav {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: .5rem;
+}
+
+.footer__nav a {
+    font-size: 1.4rem;
+}
+
+.footer__nav a:hover {
+    color: orangered;
+    transition: ease-in-out .1s;
+}
+
+.footer__copyright {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 1rem
+}
+
+.footer__copyright a {
+    color: orangered;
+}
