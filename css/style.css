@@ -8,6 +8,14 @@
     scroll-behavior: smooth
 }
 
+/* strike_through was added to visually show the user the links aren't available. They aren't available because the links haven't been set yet or simply haven't got a domain name or don't want them to link to anything specific at this stage */
+.strike_through{
+    text-decoration: solid #fff 5px line-through;
+}
+.strike_through:hover{
+    text-decoration: solid black 5px line-through;
+}
+
 
 /* =============================================== */
 /*            Fixed Background Container           */
@@ -187,7 +195,7 @@
 
 
 /* ================================================ */
-/*         Project / Protfolio Container            */
+/*         Project / Portfolio Container            */
 /* ================================================ */
 .article__container {
     margin: auto;
@@ -303,6 +311,10 @@
     margin: 1rem;
     margin-top: 200px;
     text-align: center;
+}
+
+.twitter-timeline{
+    box-shadow: 15px 15px 20px black;
 }
 
 
