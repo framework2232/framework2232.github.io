@@ -15,7 +15,7 @@ __COPYRIGHT:__ Framework2232 © 2021.
 
 __DATE:__ 21APR21
 
-__VERSION:__ v1.1.0
+__VERSION:__ v1.1.2
 
 __WEBSITE:__ [__https://framework2232.github.io__][framework2232website]
 
@@ -24,7 +24,7 @@ __WEBSITE:__ [__https://framework2232.github.io__][framework2232website]
 ## PURPOSE
 
 These repositories have been constructed for two reasons: 
-1. :fire: To develop an independent online prescence. 
+1. :fire: To develop an independent online presence. 
 1. :dizzy_face:To learn by _doing_, not just watching YouTube and pretending. 
 
 ---
@@ -47,6 +47,8 @@ HTMLHeadTags is a FREE and easy online metadata suggestion tool to help build he
 :white_check_mark: __Markdown__
 
 :white_check_mark: __Python__
+
+---
 
 ## ABOUT
 
