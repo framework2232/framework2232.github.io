@@ -78,7 +78,7 @@ observerBOX2.observe(box2);
 
 
 
-const box3 = document.getElementById("FridayGambit");
+const box3 = document.getElementById("ComingSoon");
 box3.style.transform = "translateX(-50%)";
 box3.style.transitionDuration = "1000ms";
 box3.style.opacity = 0;
