@@ -8,11 +8,17 @@
     scroll-behavior: smooth
 }
 
+:focus{
+    box-shadow: 0 0 20px 1px white;
+    border-radius: 10px;
+}
+
 /* strike_through was added to visually show the user the links aren't available. They aren't available because the links haven't been set yet or simply haven't got a domain name or don't want them to link to anything specific at this stage */
-.strike_through{
+.strike_through {
     text-decoration: solid #fff 5px line-through;
 }
-.strike_through:hover{
+
+.strike_through:hover {
     text-decoration: solid black 5px line-through;
 }
 
@@ -86,15 +92,46 @@
     font-family: 'Shadows Into Light', cursive;
 }
 
+.hero__link__social {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.hero__link__social li {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hero__link__social svg {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    fill: white;
+    height: 40px;
+}
+
+.hero__link__social svg:hover {
+   scale: 150%;
+   transition-timing-function: ease-out;
+   transition-duration: 0.2s;
+}
+
 .hero__container .welcome__message h1 {
     font-size: 60px;
     color: white;
+    text-shadow: black 1px 1px 5px;
 }
 
 .hero__container .welcome__message p {
     font-size: 30px;
     color: white;
     text-align: center;
+    text-shadow: black 1px 1px 5px;
 }
 
 @media screen and (max-width: 600px) {
@@ -104,6 +141,9 @@
 
     .hero__container .welcome__message p {
         font-size: 25px;
+    }
+    .hero__link__social svg {
+        height: 30px;
     }
 }
 
@@ -159,6 +199,10 @@
     width: 80%;
     max-width: 1100px;
     margin: auto
+}
+.about__content h3{
+    font-weight: bold;
+    text-shadow: black 1px 1px 5px;
 }
 
 .about__container .about__image {
@@ -222,7 +266,13 @@
 
 .article__content {
     display: flex;
-   
+}
+
+.article__content h2,
+.article__content span,
+.article__link a {
+    font-weight: bold;
+    text-shadow: black 1px 1px 5px;
 }
 
 .article__container .article__link {
@@ -243,9 +293,10 @@
 }
 
 @media screen and (max-width:700px) {
-    .article__container article{
+    .article__container article {
         padding-right: 1rem;
     }
+
     .article__container .article__content {
         flex-direction: column
     }
@@ -313,7 +364,7 @@
     text-align: center;
 }
 
-.twitter-timeline{
+.twitter-timeline {
     box-shadow: 15px 15px 20px black;
 }
 
